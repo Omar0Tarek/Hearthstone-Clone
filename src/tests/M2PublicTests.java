@@ -2085,10 +2085,16 @@ public class M2PublicTests {
 		
 		hero.setCurrentHP(2);
 		
+<<<<<<< HEAD
 		//System.out.println(hero.getHand().size());
 		System.out.println("befor casting :" + hero.getCurrentHP());
 		hero.castSpell(leechingSpell, new Icehowl());
 		System.out.println("after casting: " + hero.getCurrentHP());
+=======
+		
+		hero.castSpell(leechingSpell, new Icehowl());
+		
+>>>>>>> Full-Game
 		if(hero.getCurrentHP()==2)
 			fail("Casting leeching spells should result in healing the hero in the process.");
 		if(hero.getCurrentHP()!=7)
@@ -2474,7 +2480,10 @@ public class M2PublicTests {
 		paladin.setCurrentManaCrystals(2);
 		paladin.useHeroPower();
 
+<<<<<<< HEAD
 		//System.out.println(paladin.getField().size());
+=======
+>>>>>>> Full-Game
 		if(paladin.getField().size()!=1)
 			fail("useHeroPower in class Paladin should add Silver Hand Recruit to the field.");
 		Minion silverHandRecruit = paladin.getField().get(0);
@@ -5401,7 +5410,10 @@ public class M2PublicTests {
 				Minion toBeTest = new Minion("testMinion", 5, Rarity.RARE, 2, 10, false, false, false){
 					@Override
 					public void setCurrentHP(int currentHP) {
+<<<<<<< HEAD
 						System.out.println(this.getCurrentHP());
+=======
+>>>>>>> Full-Game
 						if(currentHP == 12)
 							fail("Whenever a priest attempts to use their hero power on a minion while Prophet Velen is on the field, the hero power should heal for 8 instead of 2.");
 						if(currentHP != 18)
@@ -5409,7 +5421,10 @@ public class M2PublicTests {
 						super.setCurrentHP(currentHP);
 					}
 				};
+<<<<<<< HEAD
 				
+=======
+>>>>>>> Full-Game
 				valerienne.useHeroPower(toBeTest);
 				
 			}

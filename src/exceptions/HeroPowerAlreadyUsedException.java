@@ -7,7 +7,15 @@ public class HeroPowerAlreadyUsedException extends HearthstoneException {
 		super();
 	}
 
+<<<<<<< HEAD
 	public HeroPowerAlreadyUsedException(String s) {
 		super(s);
 	}
+=======
+	public HeroPowerAlreadyUsedException(String message) {
+		super(message);
+
+	}
+
+>>>>>>> Full-Game
 }

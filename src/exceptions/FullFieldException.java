@@ -7,7 +7,15 @@ public class FullFieldException extends HearthstoneException {
 		super();
 	}
 
+<<<<<<< HEAD
 	public FullFieldException(String s) {
 		super(s);
 	}
+=======
+	public FullFieldException(String message) {
+		super(message);
+
+	}
+
+>>>>>>> Full-Game
 }

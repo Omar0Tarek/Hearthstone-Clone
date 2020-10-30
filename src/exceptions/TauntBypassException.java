@@ -6,7 +6,12 @@ public class TauntBypassException extends HearthstoneException {
 		super();
 	}
 
+<<<<<<< HEAD
 	public TauntBypassException(String s) {
 		super(s);
+=======
+	public TauntBypassException(String message) {
+		super(message);
+>>>>>>> Full-Game
 	}
 }

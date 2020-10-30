@@ -1,5 +1,6 @@
 package model.cards.spells;
 
+<<<<<<< HEAD
 import model.cards.*;
 
 public abstract class Spell extends Card {
@@ -15,4 +16,15 @@ public abstract class Spell extends Card {
 		return super.clone();
 	}
 	
+=======
+import model.cards.Card;
+import model.cards.Rarity;
+
+public abstract class Spell extends Card {
+
+	public Spell(String n, int m, Rarity r) {
+		super(n, m, r);
+	}
+
+>>>>>>> Full-Game
 }
